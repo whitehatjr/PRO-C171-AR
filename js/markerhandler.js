@@ -57,15 +57,9 @@ AFRAME.registerComponent("markerhandler", {
       var model = document.querySelector(`#model-${toy.id}`);
       model.setAttribute("visible", true);
 
-      // make description Container visible
-      var descriptionContainer = document.querySelector(
-        `#main-plane-${toy.id}`
-      );
-      descriptionContainer.setAttribute("visible", true);
-
-      // make Price Plane visible
-      var pricePlane = document.querySelector(`#price-plane-${toy.id}`);
-      pricePlane.setAttribute("visible", true);
+      // make mian plane Container visible
+      var mainPlane = document.querySelector(`#main-plane-${toy.id}`);
+      mainPlane.setAttribute("visible", true);
 
       // Changing button div visibility
       var buttonDiv = document.getElementById("button-div");
